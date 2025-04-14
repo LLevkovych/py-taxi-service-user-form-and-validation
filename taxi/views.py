@@ -3,9 +3,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
-
-from forms import CarCreationForm, DriverCreationForm, DriverLicenseUpdateForm
-from models import Driver, Car, Manufacturer
+from taxi.forms import CarCreationForm, DriverCreationForm, DriverLicenseUpdateForm
+from taxi.models import Driver, Car, Manufacturer
 
 
 @login_required
